@@ -6,7 +6,7 @@ function check_ok(){
 	var mem_pwd = document.reg_frm.mem_pwd.value;
 	var pwd_check = document.reg_frm.pwd_check.value;
 	var mem_name = document.reg_frm.mem_name.value;
-	var mem_email = document.reg_frm.mem_uid.value;
+	var mem_email = document.reg_frm.mem_email.value;
 	
 	//if(document.reg_frm.mem_uid.value == "") {
 	//if(reg_frm.mem_uid.value == "") {
@@ -43,7 +43,7 @@ function check_ok(){
 	
 	if(mem_email == "") {
 		alert("이메일을 써주세요.");
-		document.reg_frm.pwd_check.focus();
+		document.reg_frm.mem_email.focus();
 		return;
 	}
 	// 폼 이름이 reg_frm 에서 action 속성의 파일을 호출
@@ -69,7 +69,7 @@ function update_check_ok(){
 	
 	if(mem_email == "") {
 		alert("이메일을 써주세요.");
-		document.upd_frm.pwd_check.focus();
+		document.upd_frm.mem_email.focus();
 		return;
 	}
 	upd_frm.submit();
